@@ -33,6 +33,7 @@ class App extends Component{
    
     return(
       <div className='App'>
+        <h1 className='app-title'>Character Deck</h1>
       <SearchBox placeHolder="Search" onChangeHandler={this.onSearchChange}/>
       <CardList list={this.filteredCharacters()}/>
       </div>

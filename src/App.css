@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'StarJedi';
+  src: local('StarJedi'), url(./fonts/Starjedi.ttf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -8,8 +16,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(
     to left,
-    rgba(7, 27, 82, 1) 0%,
-    rgba(0, 128, 128, 1) 100%
+    rgb(254, 221, 3) 0%,
+    rgb(67, 62, 21) 100%
   );
   text-align: center;
+}
+
+.app-title{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 55px;
+  background: linear-gradient(    to left,
+  rgba(242, 250, 8, 0.388) 10%,
+  rgb(255, 196, 0) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'StarJedi';
+  letter-spacing: 7px;
 }
